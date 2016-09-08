@@ -16,15 +16,30 @@ import {AppComponent} from "./app.component";
 import {DashboardComponent} from "./dashboard.component";
 import {HeroSearchComponent}  from  "./hero-search.component" ;
 import {routing}  from  './app.routing' ;
+import {TabsWrapper} from "./tabs/tabs-wrapper.component";
+import {TabsComponent} from "./tabs/tabs.component";
+import {TabComponent} from "./tabs/tab.component";
+// import {Tab2} from "./tabs/tab2.component";
+// import {Tabs2} from "./tabs/tabs2.component";
 
 @NgModule({
     imports:      [
+        
         BrowserModule ,
         FormsModule,
         HttpModule,
         InMemoryWebApiModule.forRoot(InMemoryDataService),
         routing],
-    declarations :[HeroesComponent,HeroDetailComponent,AppComponent,DashboardComponent,HeroSearchComponent],
+    declarations :[HeroesComponent,
+        HeroDetailComponent,
+        AppComponent,
+        DashboardComponent,
+        HeroSearchComponent,
+        TabsWrapper,
+        TabsComponent,
+        TabComponent
+    ],
     bootstrap:[AppComponent]
 })
+
 export class AppModule {}

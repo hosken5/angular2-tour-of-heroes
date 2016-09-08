@@ -8,6 +8,10 @@ bin-debug/
 .idea/
 typings/
 bin-release/
+app/**/*.js
+app/**/*.map
+
+
 
 # Other files and folders
 .settings/

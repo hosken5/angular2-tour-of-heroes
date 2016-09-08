@@ -22,6 +22,11 @@ var app_component_1 = require("./app.component");
 var dashboard_component_1 = require("./dashboard.component");
 var hero_search_component_1 = require("./hero-search.component");
 var app_routing_1 = require('./app.routing');
+var tabs_wrapper_component_1 = require("./tabs/tabs-wrapper.component");
+var tabs_component_1 = require("./tabs/tabs.component");
+var tab_component_1 = require("./tabs/tab.component");
+// import {Tab2} from "./tabs/tab2.component";
+// import {Tabs2} from "./tabs/tabs2.component";
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,7 +38,15 @@ var AppModule = (function () {
                 http_1.HttpModule,
                 angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
                 app_routing_1.routing],
-            declarations: [heroes_component_1.HeroesComponent, hero_detail_component_1.HeroDetailComponent, app_component_1.AppComponent, dashboard_component_1.DashboardComponent, hero_search_component_1.HeroSearchComponent],
+            declarations: [heroes_component_1.HeroesComponent,
+                hero_detail_component_1.HeroDetailComponent,
+                app_component_1.AppComponent,
+                dashboard_component_1.DashboardComponent,
+                hero_search_component_1.HeroSearchComponent,
+                tabs_wrapper_component_1.TabsWrapper,
+                tabs_component_1.TabsComponent,
+                tab_component_1.TabComponent
+            ],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
